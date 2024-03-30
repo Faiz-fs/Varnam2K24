@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = "django-insecure-6bmq6c*%dk)32m35i@lp3bj#$^)ea)$f8#*8q0q8xeid3bplxe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['varnam2k24.onrender.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -127,8 +128,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_DIRS=[BASE_DIR/"static"]
+STATIC_ROOT=BASE_DIR/"staticfiles"
 
 # Default primary key field type
 # https://docs    'whitenoise.middleware.WhiteNoiseMiddleware',.djangoproject.com/en/5.0/ref/settings/#default-auto-field
