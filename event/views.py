@@ -5,9 +5,30 @@ from .models import EventRegist
 
 
 # Create your views here.
-
+part = {
+    "PRC": 80,
+    "CS": 100,
+    "TOV": 100,
+    "HH": 60,
+    "DD": 60,
+    "AU": 100,
+    "POV": 60,
+    "G2G": 90,
+    "ZS": 60,
+    "EH": 70,
+    "CM": 140,
+    "DC": 80,
+    "BP": 75,
+    "IA": 100,
+    "TH": 400,
+}
 slot = {
-    1: ["Product Review Contest", "Tamil oodu vilaiyadu", "Among us in real life", "Grasp to Gather"],
+    1: [
+        "Product Review Contest",
+        "Tamil oodu vilaiyadu",
+        "Among us in real life",
+        "Grasp to Gather",
+    ],
     2: ["Treasure Hunt", "IPL Auction"],
     3: ["Deal Dazzle", "Handmade Hues", "Point of View", "Bay Of Pixels"],
     4: ["Cine Saga", "Zizzle stark", "Environmental Hunters", "Code Maria"],
@@ -45,7 +66,12 @@ def sgsevent(request):
 
 def register(request, val):
     # print(eventlst[val])
-    return render(request, "register.html", {"data": val})
+    ev=EventRegist.objects.filter(eventname=eventlst[val]).count()
+    if ev>=part[val]:
+        messages.error(request, "Registeration is closed")
+        return redirect("index")
+    else:
+        return render(request, "register.html", {"data": val})
 
 
 def send(request, val):
