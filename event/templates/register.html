@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <title>Varnam 2k24</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img src="{% static 'img/5208993.jpg' %}" alt="register" />
+            </div>
+            
+            <form action="{% url 'send' data %}" method="POST">
+                {% csrf_token %}
+                <div class="topic">Event Registeration</div>
+                <div class="input-box">
+                    
+                    <input type="email" name="email" id ="email" onchange="change()" required>
+                    <label for="email">Enter the email</label>
+                </div>
+                <div class="input-box">
+                    
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Enter the Name</label>
+                </div>
+                <div class="input-box">
+                    
+                    <input type="text" name="phoneno" id="phoneno" required>
+                    <label for="phoneno">Enter the phoneno</label>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var messages = {
+                {% for message in messages %}
+        "{{ message.tags }}": "{{ message }}",
+            {% endfor %}
+            };
+        Object.keys(messages).forEach(function (tag) {
+            console.log(tag + ': ' + messages[tag]);
+            alert(messages[tag])
+        });
+    </script>
+</body>
+</html>

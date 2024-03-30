@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'img/RLogo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Varnam 2k24</title>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <nav>
+            <div class="nav__bar">
+                <div class="nav__logo">
+                    <img src="{% static 'img/RLogo.png' %}" alt="logo" />
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'sgs' %}">SGS events</a></li>
+
+                <li class="nav__logo">
+                    <a href="#">
+                        <img src="{% static 'img/RLogo.png' %}" alt="logo" />
+                    </a>
+                </li>
+                <li><a href="{% url 'club' %}">Club events</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class="section__container header__container">
+            <div class="header__content">
+                <p>Embrace the Spectrum</p>
+                <h1>Varnam 2k24<br />Where Colors Collide<br />Cultures Unite!</h1>
+            </div>
+        </div>
+    </header>
+    <section class="section__container about__container" id="about">
+        <div class="section__header">About Us</div>
+        <p class="section__description">
+            SGS is a student body, exclusively made up of students from the second to final years. It is a body of the
+            students, for the students and works to ensure that every student gets the best possible college experience.
+            SGS acts as an interface/messenger between the student body and the management. SGS conducts periodic
+            general body meetings, consisting of the class representatives of all classes, to understand the issues
+            related to student life in MCET. They meet with the management as necessary to inform, discuss and identify
+            possible solutions to the student-identified issues and relay them back to the students.
+        </p>
+    </section>
+    <section class="feature" id="feature">
+
+        <div class="section__container feature__container">
+            <h4>
+                "It's not about blending in... It's about embracing your uniqueness, your story, your voyage."
+
+            </h4>
+            <div class="section__header">Event Details</div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>IPL AUCTION</h2>
+                        <p>
+                        <h3>Event Description: </h3>Get ready to experience the thrill of being a team owner, manager,
+                        and strategist all rolled into one. Whether you're a die-hard cricket fan or a casual observer,
+                        this event promises to captivate and entertain.
+                        </p>
+                        <p>
+                        <h3>Rounds</h3>
+                        <p>
+                            Round 1: General Cricket Quiz <br>
+                            Test your cricketing knowledge with our General Cricket Quiz, covering everything from
+                            historic moments to current trends in the world of cricket. From iconic players to legendary
+                            matches, this round will challenge and entertain cricket enthusiasts of all levels. <br>
+                            Round 2: IPL Auction Simulation <br>
+                            Experience the adrenaline rush of the IPL Auction firsthand as teams enter the bidding war
+                            to assemble their dream squad. With a virtual budget at their disposal, participants will
+                            strategize, negotiate, and outbid their opponents to secure the best players.
+                        </p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Suganth S - 8754027535 <br>
+                            2. Harini - 7010536108
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('IA')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/Ipl.jpg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Treasure Hunt</h2>
+                        <p>
+                        <h3>Event Description: </h3>Treasure hunts are thrilling adventures where participants decipher
+                        clues to uncover hidden prizes or rewards. They can take place in various settings and require
+                        problem-solving skills, creativity, and teamwork. Treasure hunts foster camaraderie, making them
+                        ideal for team-building or social events. The excitement of uncovering treasure creates
+                        unforgettable memories and bonding experiences. Solving each clue and challenge brings
+                        satisfaction, making treasure hunts an immersive and thrilling quest.
+                        </p>
+                        <p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Tharan SR - 7708882933 <br>
+                            2. Kamalathithan R - 6379763188
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('TH')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/th.jpg' %}" alt="logo" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <img src="{% static 'img/RLogo.png' %}" alt="logo" />
+                <div class="footer__socials">
+                    <a href="https://instagram.com/sgsmcet?utm_source=qr&igshid=MThlNWY1MzQwNA==">
+                        <i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer__bar">
+                    <h3>Developed by Faiz @ SGS- IT Coordinator</h3>
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/faiz.f_s/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammad-faisal-j/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Faiz-fs"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <p>
+                    <span><i class="fa-solid fa-location-dot"></i></span> C-129, C-block, Dr. Mahalingam College of
+                    Engineering and Technology
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-phone"></i></span> +91 934 430 3594
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-envelope"></i></span> sgs@drmcet.ac.in
+                </p>
+            </div>
+        </div>
+        <a href="{% url 'index' %}" class="footer__bar__link">
+            <i class="fa-solid fa-house"></i><span>Home</span>
+        </a>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/c04ff74144.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <script type="text/javascript">
+        var messages = {
+                {% for message in messages %}
+        "{{ message.tags }}": "{{ message }}",
+            {% endfor %}
+            };
+        Object.keys(messages).forEach(function (tag) {
+            console.log(tag + ': ' + messages[tag]);
+            alert(messages[tag])
+        });
+
+        function move(str) {
+            var url = "{% url 'register' 'val' %}"
+            var arg = str
+            window.location.href = url.replace('val', arg);
+        }
+    </script>
+</body>
+
+
+</html>
