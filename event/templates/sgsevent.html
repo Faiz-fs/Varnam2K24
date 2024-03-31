@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-{% load static %}
+    {% load static %}
 <head>
     <meta charset="UTF-8">
     
@@ -32,7 +31,7 @@
                     </a>
                 </li>
                 <li><a href="{% url 'club' %}">Club events</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="{% url 'index' %}">About</a></li>
             </ul>
         </nav>
         <div class="section__container header__container">
@@ -42,17 +41,6 @@
             </div>
         </div>
     </header>
-    <section class="section__container about__container" id="about">
-        <div class="section__header">About Us</div>
-        <p class="section__description">
-            SGS is a student body, exclusively made up of students from the second to final years. It is a body of the
-            students, for the students and works to ensure that every student gets the best possible college experience.
-            SGS acts as an interface/messenger between the student body and the management. SGS conducts periodic
-            general body meetings, consisting of the class representatives of all classes, to understand the issues
-            related to student life in MCET. They meet with the management as necessary to inform, discuss and identify
-            possible solutions to the student-identified issues and relay them back to the students.
-        </p>
-    </section>
     <section class="feature" id="feature">
 
         <div class="section__container feature__container">
@@ -64,63 +52,464 @@
             <div class="feature__grid">
                 <div class="feature__content">
                     <div>
-                        <h2>IPL AUCTION</h2>
+                        <h2>Product Review Contest</h2>
                         <p>
-                        <h3>Event Description: </h3>Get ready to experience the thrill of being a team owner, manager,
-                        and strategist all rolled into one. Whether you're a die-hard cricket fan or a casual observer,
-                        this event promises to captivate and entertain. <br>
-                        Group Member Event
+                        <h3>Event Description: </h3>Product Review Contest is
+                        to share the insights on the latest products through the
+                        conception <br>
+                        Group and Single Event
                         </p>
                         <p>
                         <h3>Rounds</h3>
                         <p>
-                            Round 1: General Cricket Quiz <br>
-                            Test your cricketing knowledge with our General Cricket Quiz, covering everything from
-                            historic moments to current trends in the world of cricket. From iconic players to legendary
-                            matches, this round will challenge and entertain cricket enthusiasts of all levels. <br>
-                            Round 2: IPL Auction Simulation <br>
-                            Experience the adrenaline rush of the IPL Auction firsthand as teams enter the bidding war
-                            to assemble their dream squad. With a virtual budget at their disposal, participants will
-                            strategize, negotiate, and outbid their opponents to secure the best players.
+                            Round 1 : "Product Quest" <br>
+                            Finding a product slogan
+                            involves identifying the
+                            catchy phrase or tagline
+                            associated with a particular
+                            product <br>
+
+                            Round 2 : "Debate on Brand" <br>
+                            Two teams engage in a
+                            debate about a brands of a
+                            product presenting good
+                            and bad points to convince
+                            others. <br>
+
+                            Round 3 : "Debug the Picture" <br>
+                            Teams participate in an
+                            entertaining game where
+                            one team member sketches
+                            a product, while another
+                            tries to guess its name by
+                            looking at the drawing
+                            before time expires.
                         </p>
                         <h3>Event Coordinators</h3>
                         <p>
-                            1. Suganth S - 8754027535 <br>
-                            2. Harini - 7010536108
+                            1. Sangeetha K - 9443989990 <br>
+                            2. Priyadharshini S - 8056324147
                         </p>
                         </p>
-                        <button class="btn" onclick="move('IA')">Register</button>
+                        <button class="btn" onclick="move('PRC')">Register</button>
                     </div>
                 </div>
                 <div class="feature__img">
-                    <img src="{% static 'img/Ipl.jpg' %}" alt="logo" />
+                    <img src="{% static 'img/CCC Logo.jpg' %}" alt="logo" />
                 </div>
             </div>
             <div class="feature__grid">
                 <div class="feature__content">
                     <div>
-                        <h2>Treasure Hunt</h2>
+                        <h2>Cine Saga</h2>
                         <p>
-                        <h3>Event Description: </h3>Treasure hunts are thrilling adventures where participants decipher
-                        clues to uncover hidden prizes or rewards. They can take place in various settings and require
-                        problem-solving skills, creativity, and teamwork. Treasure hunts foster camaraderie, making them
-                        ideal for team-building or social events. The excitement of uncovering treasure creates
-                        unforgettable memories and bonding experiences. Solving each clue and challenge brings
-                        satisfaction, making treasure hunts an immersive and thrilling quest. <br>
-                        Group Member Event
+                        <h3>Event Description: </h3>Cine Saga is an immersive
+                        and exciting game that
+                        takes players on a journey
+                        through the world of
+                        cinema using iconic songs,
+                        memorable dialogue and
+                        famous movie titles. <br>
+                        Group Event
                         </p>
                         <p>
+                        <h3>3 Rounds</h3>
                         <h3>Event Coordinators</h3>
                         <p>
-                            1. Tharan SR - 7708882933 <br>
-                            2. Kamalathithan R - 6379763188
+                            1. Ramnath C-9384477897 <br>
+                            2. Swedha C-9566334757 <br>
+                            3. Rakesh-6383667072
                         </p>
                         </p>
-                        <button class="btn" onclick="move('TH')">Register</button>
+                        <button class="btn" onclick="move('CS')">Register</button>
                     </div>
                 </div>
                 <div class="feature__img">
-                    <img src="{% static 'img/th.jpg' %}" alt="logo" />
+                    <img src="{% static 'img/gyan.png' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Tamil oodu vilaiyadu</h2>
+                        <p>
+                        <h3>Event Description: </h3>Explore the richness of Tamil literature and culture at 'Tamil Oodu
+                        Vilaiyadu' – an immersive event blending reading and play.he event Tamil Odu Vila
+                        Yadu is conducted based on
+                        Tamil language. It contains
+                        5 various rounds for <br>
+                        Group Event
+                        </p>
+                        <p>
+                        <h3>Rounds</h3>
+                        <p>
+                            Round 1: <br> Tamil language
+                            oriented connection. <br>
+                            Round 2: <br> movie name or
+                            song Identification by
+                            watching the acting. <br>
+                            Round 3: <br> Siru dhaniya
+                            food name Identification. <br>
+                            Round 4: <br> Memory testing
+                            of item Identification in
+                            photo. <br>
+                            Round 5: <br> Puzzle solving.
+                            Collecting puzzles from
+                            various places and solving
+                            the puzzle.
+                        </p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Maheshwaran M S- 9597609321 <br>
+                            2. Siddharth M - 9382757075 <br>
+                            3. Tharani Prakash N - 6374235715
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('TOV')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/MTM.jpeg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Handmade Hues</h2>
+                        <p>
+                        <h3>Event Description: </h3>Creative and colourful Eco friendly Craft competition <br>
+                        Group Event Max members-3
+                        </p>
+                        <p>
+                        <h3>2 Rounds</h3>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. M.Kamesh Kumar-9655933134 <br>
+                            2. K S Vijitha-7305192129
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('HH')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/FAC.jpg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Deal Dazzle 24'</h2>
+                        <p>
+                        <h3>Event Description: </h3>Dive into an electrifying event where your knowledge of cricket,
+                        cinema, elections, and more will be put to the test. Experience the thrill of competitive trivia
+                        and bidding in a cricket auction-style atmosphere
+                        <br>
+                        Group Event Max members-3
+                        </p>
+                        <p>
+                        <h3>2 Rounds</h3>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. A.SUNDARESHWARA-97870 20307 <br>
+                            2. P.SIVASUBRAMANIAN-9566374148 <br>
+                            2. M.U.SHREENITHI-6379776696
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('DD')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/Readers_Park.jpg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Among us in real life</h2>
+                        <p>
+                        <h3>Event Description: </h3>An action-packed event where participants will face an array of
+                        challenges and games designed to test their wit, teamwork, and deduction skills. From unraveling
+                        clues to uncovering hidden treasures, and guessing the sources of famous quotes, every moment
+                        promises excitement and camaraderie. Get ready for an unforgettable experience filled with fun
+                        and adventure! <br>
+                        Group Event Max members-10
+                        </p>
+                        <p>
+                        <h3>Rounds</h3>
+                        <p>
+                            Round:1 <br>
+                            The participants had to step
+                            into the roles of Crewmates
+                            and Imposter, navigating
+                            through a series of
+                            challenges and tasks which
+                            includes(twister round,word
+                            game,spin the wheel,quiz
+                            etc..) <br>
+                            Round 2: <br>
+                            A Q-cards game is a fun
+                            and exciting activity where
+                            participants follow clues
+                            and a QR code to find a
+                            hidden treasure. <br>
+                            Round 3: <br>
+                            Find the Quote:
+                            The quote game is a
+                            guessing game where
+                            players try to identify the
+                            source of a given quote,
+                            such as a book, movie, or
+                            famous person.
+
+                        </p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. A.Sudharsana-9942561999 <br>
+                            2. S.M Rahul- 8138065316 <br>
+                            3. P.V Vaishnavi-8428020064
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('AU')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/rostram.png' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>“POV” (Point of View)</h2>
+                        <p>
+                        <h3>Event Description: </h3>"Fun Filled event with
+                        changing the original
+                        scenario with the
+                        participant"
+                        Participant shall provide a
+                        solution either with their
+                        historical knowledge or
+                        made up solutions to solve
+                        scenarios in an apt manner. <br>
+                        Single members Event
+                        </p>
+                        <p>
+                        <h3>3 Rounds</h3>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Ganesh Kumar J - 9025679459 <br>
+                            2. Jotishwaran P - 9360795158
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('POV')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/GCC.png' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Grasp to Gather(G2G)</h2>
+                        <p>
+                        <h3>Event Description: </h3>A fun and entertaining NSS Empowerment Challenge and thrilling event
+                        designed to test your skills, knowledge and Teamwork. This event comprises of four exciting
+                        rounds that will challenge and empower the participants in various
+                        ways. Every team has to win
+                        every event to grasp a
+                        missing part of a puzzle
+                        which you have to gather
+                        together to win the prize.
+                        Hurry and gather your
+                        friends to grasp your prizes.
+                        <br>
+                        Group Event Max members-3
+                        </p>
+                        <p>
+                        <h3>4 Rounds</h3>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Karthik.K - 6380570557 <br>
+                            2. Shrinithi.M - 8300909179
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('G2G')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/NCC.PNG' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Zizzle stark</h2>
+                        <p>
+                        <h3>Event Description: </h3>Zizzle stark invites you to
+                        show case social knowledge
+                        and welfare in a non-
+                        technical extravaganza. <br>
+                        Group Event Max members-3
+                        </p>
+                        <p>
+                        <h3>Rounds</h3>
+                        <p>
+                            Round 1 <br> A quiz round
+                            based on critical thinking in
+                            the given scenario and
+                            enhancing awareness. <br>
+                            Round 2 <br> An activity
+                            based on communication
+                            and memory power. <br>
+                            Round 3 <br> To test the
+                            understanding between the
+                            teammates and improve
+                            coordination 
+                        </p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Selvaragul M - 8870129563 <br>
+                            2. Prayudhmanaa - 7010559493
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('ZS')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/yrcrrc.png' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Environmental Hunters</h2>
+                        <p>
+                        <h3>Event Description: </h3>Some environmental items are stored in a room of an indirect manner,
+                        and species identification sounds are provided. Participants who belong to the majority species
+                        will receive prizes. <br>
+                        Single Member Event
+                    </p>
+                        <p>
+                        <h3>Rounds</h3>
+                        <p>
+                            Round 1: <br>
+                            We administer an environmentally themed quiz comprising questions about nature, trees,
+                            plants.
+                            <br>
+                            Round 2: <br>
+                            We are organizing an event where we will use headphones to listen to animal sounds and
+                            analyze them.
+                            <br>
+                            Round 3: <br>
+                            We are planning to host an event where we will observe and analyze the behavior of animals,
+                            study nature photography, and explore environmental-related topics.
+                        </p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. V.J.Jai Akkayarajkumar - 7397062326 <br>
+                            2. N.Koneeshwaran - 9345895647
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('EH')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/EVC.jpg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Code Maria</h2>
+                        <p>
+                        <h3>Event Description: </h3>Exploring the knowledge in technical world <br>
+                        Group Even"Product Review Contest",t Max members-2
+                        </p>
+                        <p>
+                        <h3>2 Rounds</h3>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. K.Aswin kumar - 8754603787 <br>
+                            2. P.Dineshwaran - 9095145230
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('CM')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/SMT.jpg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Feet on Fire</h2>
+                        <p>
+                        <h3>Event Description: </h3>The event is for regarding
+                        dance competition(Solo event & Team event) <br>
+                        Solo Dance: <br> Dancers take
+                        center stage to showcase
+                        their individual talents in a
+                        solo performance.
+                        Group dance: <br> Groups of
+                        dancers come together to
+                        create a mesmerizing
+                        spectacle of synchronized
+                        movements and
+                        choreography. 
+                        </p>
+                        <p>
+                        <h3>Rounds</h3>
+                        <p>
+                            Round 1: Selection
+                            Round <br>
+                            All the participants will
+                            perform who are registered,
+                            in dance floor <br>
+                            Round 2: Semi-Finals <br>
+                            From the first round
+                            shortlisted participants will
+                            perform on the same floor
+                            with different judging
+                            processu
+                        </p>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Santheep Kumar M - 7904341183
+                            2. Manivanan P - 7904238686
+                            3. Thithiksha - 8124192363
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('FF')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/FAC.jpg' %}" alt="logo" />
+                </div>
+            </div>
+            <div class="feature__grid">
+                <div class="feature__content">
+                    <div>
+                        <h2>Bay Of Pixels</h2>
+                        <p>
+                        <h3>Event Description: </h3>The professional art of
+                        snapping high-quality images. <br>
+                        Single Member Event
+                        </p>
+                        <p>
+                        <h3>1 Rounds</h3>
+                        <h3>Event Coordinators</h3>
+                        <p>
+                            1. Nalin Kumar B - 9655510625
+                            2. Abdul Razaak - 7904402889
+                            3. Sangeetha vani S - 9944219798
+                        </p>
+                        </p>
+                        <button class="btn" onclick="move('BP')">Register</button>
+                    </div>
+                </div>
+                <div class="feature__img">
+                    <img src="{% static 'img/stdmt.png' %}" alt="logo" />
                 </div>
             </div>
         </div>
@@ -130,8 +519,8 @@
             <div class="footer__col">
                 <img src="{% static 'img/SGS_Logo.png' %}" alt="logo" />
                 <div class="footer__socials">
-                    <a href="https://instagram.com/sgsmcet?utm_source=qr&igshid=MThlNWY1MzQwNA==">
-                        <i class="fab fa-instagram"></i></a>
+                    <a href="https://instagram.com/sgsmcet?utm_source=qr&igshid=MThlNWY1MzQwNA=="><i
+                            class="fab fa-instagram"></i></a>
                 </div>
                 <div class="footer__bar">
                     <h3>Developed by Faiz @ SGS- IT Coordinator</h3>
@@ -160,22 +549,19 @@
             <i class="fa-solid fa-house"></i><span>Home</span>
         </a>
     </footer>
-
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/c04ff74144.js" crossorigin="anonymous"></script>
     <script src="{% static 'js/script.js' %}"></script>
-
     <script type="text/javascript">
         var messages = {
-                {% for message in messages %}
+                    {% for message in messages %}
         "{{ message.tags }}": "{{ message }}",
             {% endfor %}
-            };
+                };
         Object.keys(messages).forEach(function (tag) {
             console.log(tag + ': ' + messages[tag]);
             alert(messages[tag])
         });
-
         function move(str) {
             var url = "{% url 'register' 'val' %}"
             var arg = str
@@ -183,6 +569,5 @@
         }
     </script>
 </body>
-
 
 </html>
