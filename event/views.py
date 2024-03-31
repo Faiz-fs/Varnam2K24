@@ -17,20 +17,26 @@ part = {
     "ZS": 60,
     "EH": 70,
     "CM": 140,
-    "DC": 80,
+    "FF": 80,
     "BP": 75,
     "IA": 100,
     "TH": 400,
 }
 slot = {
     1: [
-        "Product Review Contest",
         "Tamil oodu vilaiyadu",
         "Among us in real life",
         "Grasp to Gather",
+        "Bay Of Pixels",
+        "Feet on Fire"
     ],
     2: ["Treasure Hunt", "IPL Auction"],
-    3: ["Deal Dazzle", "Handmade Hues", "Point of View", "Bay Of Pixels"],
+    3: [
+        "Deal Dazzle",
+        "Handmade Hues",
+        "Point of View",
+        "Product Review Contest",
+    ],
     4: ["Cine Saga", "Zizzle stark", "Environmental Hunters", "Code Maria"],
 }
 eventlst = {
@@ -45,7 +51,7 @@ eventlst = {
     "ZS": "Zizzle stark",
     "EH": "Environmental Hunters",
     "CM": "Code Maria",
-    "DC": "Dance Competition",
+    "FF": "Feet on Fire",
     "BP": "Bay Of Pixels",
     "IA": "IPL Auction",
     "TH": "Treasure Hunt",
@@ -66,8 +72,9 @@ def sgsevent(request):
 
 def register(request, val):
     # print(eventlst[val])
-    ev=EventRegist.objects.filter(eventname=eventlst[val]).count()
-    if ev>=part[val]:
+    ev = EventRegist.objects.filter(eventname=eventlst[val]).count()
+    # print(ev)
+    if ev >= part[val]:
         messages.error(request, "Registeration is closed")
         return redirect("index")
     else:
