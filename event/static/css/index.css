@@ -215,7 +215,7 @@ nav {
 }
 
 .banner__card:nth-child(1) {
-  background-image: url("/static/img/ourteam.jpg");
+  background-image: url("/static/img/ourteam1.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
