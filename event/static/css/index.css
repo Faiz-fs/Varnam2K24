@@ -227,10 +227,19 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.banner__card:nth-child(even) {
-  background-color: var(--text-dark);
+.banner__card:nth-child(2) {
+  background-image: url("/static/img/clubs.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.banner__card:nth-child(4) {
+  background-image: url("/static/img/cheifguest2.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .banner__grid img {
   position: absolute;
