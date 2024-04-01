@@ -6,21 +6,21 @@ from .models import EventRegist
 
 # Create your views here.
 part = {
-    "PRC": 80,
-    "CS": 100,
-    "TOV": 100,
-    "HH": 60,
-    "DD": 60,
-    "AU": 100,
-    "POV": 60,
-    "G2G": 90,
-    "ZS": 60,
-    "EH": 70,
-    "CM": 140,
-    "FF": 80,
-    "BP": 75,
-    "IA": 100,
-    "TH": 400,
+    "PRC": 130,
+    "CS": 150,
+    "TOV": 150,
+    "HH": 110,
+    "DD": 110,
+    "AU": 150,
+    "POV": 110,
+    "G2G": 140,
+    "ZS": 110,
+    "EH": 120,
+    "CM": 190,
+    "FF": 130,
+    "BP": 130,
+    "IA": 150,
+    "TH": 500,
 }
 slot = {
     1: [
