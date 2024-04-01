@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    {% load static %}
 
 <head>
     <meta charset="UTF-8">
-    {% load static %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{% static 'img/RLogo.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -56,7 +55,7 @@
                 <h4>DJ</h4>
             </div>
             <div class="banner__card">
-                <h4>Culturals</h4>
+                <h4>Cheif Guest</h4>
             </div>
             <img src="{% static 'img/SGS_Logo.png' %}" alt="logo" />
         </div>
@@ -141,9 +140,9 @@
             <div class="body-container">
                 <div class="overlay"></div>
                 <div class="event-info">
-                    <p class="title">SGS Event</p>
+                    <p class="title">SGS Events</p>
                     <div class="separator"></div>
-                    <p class="info">Tresure hunt, IPL Auction</p>
+                    <p class="info">Treasure Hunt, IPL Auction</p>
                     <p class="price">Explore More</p>
 
                     <div class="additional-info">
@@ -165,39 +164,6 @@
                 <a href="{% url 'sgs' %}" class="action">Register</a>
             </div>
         </div>
-        <!--<div class="item-container">
-            <div class="img-container">
-                <img src="{% static 'img/eventbg.jpg' %}" alt="Event image">
-            </div>
-
-            <div class="body-container">
-                <div class="overlay"></div>
-
-                <div class="event-info">
-                    <p class="title">Bubbe's Book Club</p>
-                    <div class="separator"></div>
-                    <p class="info">Bellmore, NY</p>
-                    <p class="price">Free</p>
-
-                    <div class="additional-info">
-                        <p class="info">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Grand Central Terminal
-                        </p>
-                        <p class="info">
-                            <i class="far fa-calendar-alt"></i>
-                            Sat, Sep 19, 10:00 AM EDT
-                        </p>
-
-                        <p class="info description">
-                            Welcome! Everyone has a unique perspective after reading a book, and we would love you
-                            to share yours with us! We meet one Sunday evening <span>more...</span>
-                        </p>
-                    </div>
-                </div>
-                <a href="{% url 'club' %}" class="action">Register</a>
-            </div>
-        </div>-->
     </section>
 
     <footer class="footer" id="contact">
@@ -226,6 +192,12 @@
                 </p>
                 <p>
                     <span><i class="fa-solid fa-phone"></i></span> +91 934 430 3594
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-phone"></i></span> +91 962 909 3033
+                </p>
+                <p>
+                    <span><i class="fa-solid fa-phone"></i></span> +91 934 552 2989
                 </p>
                 <p>
                     <span><i class="fa-solid fa-envelope"></i></span> sgs@drmcet.ac.in
