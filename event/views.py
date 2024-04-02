@@ -1,7 +1,7 @@
 import re
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import EventRegist
+from .models import EventRegist,GrupRegist
 
 
 # Create your views here.
@@ -72,7 +72,7 @@ def sgsevent(request):
 
 def register(request, val):
     # print(eventlst[val])
-    ev = EventRegist.objects.filter(eventname=eventlst[val]).count()
+    ev = GrupRegist.objects.filter(eventname=eventlst[val]).count()
     # print(ev)
     if ev >= part[val]:
         messages.error(request, "Registeration is closed")
@@ -88,6 +88,7 @@ def send(request, val):
         email = request.POST["email"]
         name = request.POST["name"]
         phoneno = request.POST["phoneno"]
+        team = request.POST["team"]
         if (
             re.match(pattern, email)
             and "7276" in email
@@ -95,7 +96,7 @@ def send(request, val):
             and re.match(phonep, phoneno)
             and len(phoneno) == 10
         ):
-            users = EventRegist.objects.filter(email=email)
+            users = GrupRegist.objects.filter(email=email)
             if users.exists():
                 for user in users:
                     for i in slot.keys():
@@ -105,14 +106,14 @@ def send(request, val):
                             )
                             return redirect("index")
                 else:
-                    EventRegist.objects.create(
-                        email=email, name=name, phoneno=phoneno, eventname=eventlst[val]
+                    GrupRegist.objects.create(
+                        email=email, name=name, phoneno=phoneno, eventname=eventlst[val],teamname=team
                     )
                     messages.success(request, "Registered Successfull")
                     return redirect("index")
             else:
-                EventRegist.objects.create(
-                    email=email, name=name, phoneno=phoneno, eventname=eventlst[val]
+                GrupRegist.objects.create(
+                    email=email, name=name, phoneno=phoneno, eventname=eventlst[val],teamname=team
                 )
                 messages.success(request, "Registered Successfull")
                 return redirect("index")
