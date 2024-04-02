@@ -19,6 +19,7 @@ class GrupRegist(models.Model):
     phoneno=models.CharField(max_length=10)
     teamname=models.CharField(max_length=50)
     eventname=models.CharField(max_length=50)
+    date=models.DateTimeField(auto_now_add=True)
     
     
     def __str__(self) -> str:
